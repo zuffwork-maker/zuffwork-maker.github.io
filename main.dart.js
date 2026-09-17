@@ -8175,8 +8175,8 @@ if(a<=97.5)return"90 - 97.5 %"
 return"> 97.5 %"},
 aTz(a,b,c,d){var s,r,q,p={},o=b*1000,n=c*1000,m=(o+n)/2,l=new B.alS(d)
 p.a=p.b=null
-if(d===1){p.b=347.1+5.161*a
-p.a=57.22+0.9168*a}else{p.b=321.7+4.971*a
+if(d===1){p.b=323.5+5.201*a
+p.a=57.24+0.9027*a}else{p.b=321.7+4.971*a
 p.a=54.5+0.8256*a}p=new B.alT(p)
 s=p.$1(o)
 r=p.$1(n)
@@ -45297,9 +45297,7 @@ B.aA6.prototype={
 gB(a){return this.a.gB(0)}}
 B.alU.prototype={}
 B.alS.prototype={
-$1(a){var s=this.a===1?(a-347.1)/5.161:(a-321.7)/4.971
-if(s<15)return 0
-return A.n.av(s)},
+$1(a){return A.n.av(this.a===1?(a-323.5)/5.201:(a-321.7)/4.971)},
 $S:149}
 B.alT.prototype={
 $1(a){var s,r,q,p=this.a
